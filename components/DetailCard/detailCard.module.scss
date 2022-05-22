@@ -1,0 +1,32 @@
+.detailCard {
+  border: 1px solid #d7ddbd;
+  border-radius: 4px;
+  display: flex;
+  > div:first-child {
+    max-width: 300px;
+    width: 100%;
+    > span:first-child,
+    img {
+      width: 100% !important;
+      height: 100% !important;
+      max-width: 300px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    > div:first-child {
+      height: 300px;
+    }
+  }
+}
+
+.infoBox {
+  padding: 16px;
+  flex: 1 1 0;
+  span {
+    font-weight: bold;
+  }
+  p {
+    margin-top: 16px;
+  }
+}
