@@ -21,7 +21,7 @@ const Card = ({ item }: any) => {
       <div className={styled.infoBox}>
         <span>{name}</span>
         <p>{description || "No description."}</p>
-        {items.slice(0, 10).map(({ name }) => (
+        {items.slice(0, 10).map(({ name }: string | any) => (
           <p key={name}>{name}</p>
         ))}
       </div>
